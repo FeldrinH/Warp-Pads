@@ -14,10 +14,6 @@
 	tag @s remove wp.onTier3
 #For players and what pad they're on
 	execute if entity @e[tag=wp.pad1,dx=0,dy=0,dz=0,limit=1] run tag @s add wp.onTier1
-	execute if entity @e[tag=wp.pad2,dx=0,dy=0,dz=0,limit=1] run tag @s add wp.onTier2
-	execute if entity @e[tag=wp.pad3,dx=0,dy=0,dz=0,limit=1] run tag @s add wp.onTier3
-
-	execute as @e[tag=wp.pad] at @s run function smoochypit:warppad/iterate/circleop
 
 #Add warp pads that meet criteria in the dimension
 	function smoochypit:warppad/iterate/dimension
@@ -37,8 +33,6 @@
 	execute as @e[tag=wp.sourcePad,limit=1] unless entity @s[tag=wp.hasSelect] run scoreboard players set @s wp.tempID 1
 	execute as @e[tag=wp.sourcePad,limit=1] unless entity @s[tag=wp.hasSelect] run tag @s add wp.hasSelect
 	execute if entity @e[tag=wp.pad,distance=..1] at @e[tag=wp.pad1,distance=..1,limit=1] run function smoochypit:warppad/iterate/post/warp1
-	execute if entity @e[tag=wp.pad,distance=..1] at @e[tag=wp.pad2,distance=..1,limit=1] run function smoochypit:warppad/iterate/post/warp2
-	execute if entity @e[tag=wp.pad,distance=..1] at @e[tag=wp.pad3,distance=..1,limit=1] run function smoochypit:warppad/iterate/post/warp3
 	tag @s add wp.iterated
 
 #Again for each player who needs it fam
