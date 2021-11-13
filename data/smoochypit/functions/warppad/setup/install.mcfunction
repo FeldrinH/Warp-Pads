@@ -13,6 +13,7 @@ scoreboard objectives add wp.anim1time dummy
 scoreboard objectives add wp.anim1delay dummy
 scoreboard objectives add wp.iconColor dummy
 scoreboard objectives add wp.linkedUUID dummy
+scoreboard objectives add wp.freqCompare dummy
 scoreboard objectives add wp.streamFreq dummy
 scoreboard objectives add wp.modSucc dummy
 scoreboard objectives add wp.passCount dummy
@@ -26,3 +27,6 @@ scoreboard objectives add wp.dist45 dummy
 scoreboard objectives add wp.dist60 dummy
 scoreboard objectives add wp.dist75 dummy
 scoreboard objectives add wp.guitimer dummy
+
+scoreboard objectives add wp.gFreqCounter dummy
+execute unless score GlobalStore wp.gFreqCounter matches 0.. run scoreboard players set GlobalStore wp.gFreqCounter 1

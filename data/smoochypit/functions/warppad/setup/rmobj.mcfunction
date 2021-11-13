@@ -18,6 +18,7 @@ scoreboard objectives remove wp.anim1time
 scoreboard objectives remove wp.anim1delay
 scoreboard objectives remove wp.iconColor
 scoreboard objectives remove wp.linkedUUID
+scoreboard objectives remove wp.freqCompare
 scoreboard objectives remove wp.streamFreq
 scoreboard objectives remove wp.modSucc
 scoreboard objectives remove wp.passCount
@@ -31,6 +32,8 @@ scoreboard objectives remove wp.dist45
 scoreboard objectives remove wp.dist60
 scoreboard objectives remove wp.dist75
 scoreboard objectives remove wp.guitimer
+
+scoreboard objectives remove wp.gFreqCounter
 
 tag @a remove wp.noIterate
 tag @a remove wp.onTier1

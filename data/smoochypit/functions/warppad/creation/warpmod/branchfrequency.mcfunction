@@ -1,0 +1,2 @@
+execute if data entity @e[type=item,nbt={Item:{id:"minecraft:paper",Count:1b}},limit=1,sort=nearest,distance=..0.1] Item.tag.display.Name run function smoochypit:warppad/creation/warpmod/frequency
+execute unless data entity @e[type=item,nbt={Item:{id:"minecraft:paper",Count:1b}},limit=1,sort=nearest,distance=..0.1] Item.tag.display.Name run function smoochypit:warppad/creation/warpmod/resetfrequency
